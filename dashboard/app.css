@@ -1,0 +1,74 @@
+/* The Token Radar v6 — editorial ledger: cream paper, deep green ink, serif masthead. */
+*{box-sizing:border-box}
+body{margin:0;background:#f7f2e7;color:#20291f;font:14px/1.45 -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.mast{background:#1c4632;color:#f3ead3;border-bottom:4px solid #c8a24a}
+.mast-in{max-width:1360px;margin:0 auto;padding:12px 24px 10px}
+.mast-kicker{font:600 11px/1.2 inherit;letter-spacing:.18em;color:#d8c98f}
+.mast h1{font:700 36px/1.05 Georgia,"Times New Roman",serif;margin:4px 0 3px;letter-spacing:.01em}
+.mast-sub{margin:0 0 4px;font:italic 14px/1.35 Georgia,serif;color:#e6dcc0;max-width:1050px}
+.mast-meta{margin:0;font-size:12.5px;color:#cfe0cf}
+main{max-width:1360px;margin:0 auto;padding:12px 24px 8px}
+.strip{border:1px solid #b9a86a;background:#fffdf6;padding:7px 12px;margin:0 0 8px;font-size:12.5px}
+.strip b{color:#1c4632}
+.strip .formula{font:600 14px/1.4 Georgia,serif;color:#1c4632}
+.strip .recon{margin-top:4px;color:#4a5244}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 8px}
+.tab{border:1px solid #8a9a86;background:#efe8d3;color:#2c3a2e;padding:6px 12px;cursor:pointer;
+  font:600 13px inherit;border-radius:3px}
+.tab.on{background:#1c4632;color:#f3ead3;border-color:#1c4632}
+.tab .n{font-variant-numeric:tabular-nums;color:#c8a24a}
+.tab.on .n{color:#e8c96a}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:end;background:#fffdf6;
+  border:1px solid #b9a86a;padding:6px 10px;margin:0 0 5px}
+.filters label{font-size:11px;font-weight:700;letter-spacing:.06em;color:#5a6353;
+  text-transform:uppercase;display:block}
+.filters select,.filters input{font:13px inherit;padding:4px 6px;border:1px solid #8a9a86;
+  border-radius:3px;background:#fff;color:#20291f;max-width:170px}
+.filters input[type=number]{width:90px}
+.filters .shown{margin-left:auto;font-size:12.5px;color:#4a5244;align-self:center}
+.filters button{font:600 12px inherit;padding:5px 10px;border:1px solid #8a9a86;background:#efe8d3;
+  border-radius:3px;cursor:pointer}
+.hint{font-size:12px;color:#5a6353;margin:0 0 5px}
+.hint b{color:#1c4632}
+table{width:100%;border-collapse:collapse;background:#fffdf6;font-size:12.5px}
+th,td{padding:4px 7px;border-bottom:1px solid #e2dcc8;text-align:left;vertical-align:top}
+th{background:#1c4632;color:#f3ead3;font-size:11.5px;letter-spacing:.04em;cursor:pointer;
+  white-space:nowrap;user-select:none}
+th .arw{color:#e8c96a}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.rank{font:700 14px Georgia,serif;color:#1c4632}
+tr.top td{background:#f3ead3}
+tr:hover td{background:#f0e9d2}
+a{color:#1c4632}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:2px}
+.badge.w{background:#1c4632;color:#f3ead3}
+.badge.b{background:#e8dfc5;color:#5a6353}
+.verdict{font-weight:700}
+.verdict.worth{color:#1c6b34}.verdict.thin{color:#8a6d00}.verdict.skip{color:#8a8a7a}
+.pager{display:flex;gap:8px;align-items:center;margin:6px 0;font-size:12.5px;color:#4a5244}
+.pager button{font:600 12px inherit;padding:4px 10px;border:1px solid #8a9a86;background:#efe8d3;
+  border-radius:3px;cursor:pointer}
+.pager button:disabled{opacity:.45;cursor:default}
+h2{font:700 24px/1.2 Georgia,serif;color:#1c4632;margin:2px 0 6px}
+h3{font:700 16px/1.3 Georgia,serif;color:#1c4632;margin:7px 0 3px}
+.card{background:#fffdf6;border:1px solid #b9a86a;padding:9px 14px;margin:0 0 8px}
+.card p{margin:6px 0}
+.kv{width:auto}
+.kv td:first-child{color:#5a6353;white-space:nowrap}
+.kv td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.steps{margin:4px 0;padding-left:20px}
+.steps li{margin:3px 0}
+.steps .cost{color:#1c6b34;font-weight:600}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.cols2 table{font-size:12px}
+.cols2 th{cursor:default}
+.cols3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 16px}
+.cols3 table{font-size:11.5px}
+.cols3 th,.cols3 td{padding:2px 5px}
+.cols3 th{cursor:default}
+.note{font-size:12.5px;color:#5a6353}
+.big{font:700 30px/1.1 Georgia,serif;color:#1c4632}
+.panel-list{columns:2;column-gap:28px;font-size:13px}
+.panel-list li{margin:3px 0;break-inside:avoid}
+footer{max-width:1360px;margin:0 auto;padding:8px 24px 20px;font-size:12px;color:#5a6353}
+.foot-note{color:#8a9a86}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Token Radar — a launch ledger for protocols that record no token</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="mast">
+  <div class="mast-in">
+    <div class="mast-kicker">DEFI LLAMA SNAPSHOT &middot; <span id="asof"></span> &middot; OFFLINE DASHBOARD</div>
+    <h1>The Token Radar</h1>
+    <p class="mast-sub">A launch ledger for protocols that record no token, ranked by implied launch value.</p>
+    <p class="mast-meta" id="mastmeta"></p>
+  </div>
+</header>
+<main id="view"></main>
+<footer>
+  <p>Source: DefiLlama protocols snapshot, <span id="asof2"></span>. Implied values are this
+  entry&rsquo;s model, not a price and not a promise: a protocol may hold a token its DefiLlama
+  record does not carry, so every row says &ldquo;records no token&rdquo;, never &ldquo;has no token&rdquo;.
+  Farm plans are positioning, not a guarantee of any airdrop. Gas figures are the builder&rsquo;s
+  estimates, stated beside each step.</p>
+  <p class="foot-note">Built by an AI agent for make.fun&rsquo;s token-radar-01 bounty. Renders with no network.</p>
+</footer>
+<script src="farm.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
